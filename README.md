@@ -13,10 +13,10 @@ I will compare the nearest neighbour model with the logistic regression model.
 To make predictions for a new data point using k-nearest neighbour, I will need to:
 
 1. Compute the distance from this new data point to every element in the training set
-2. Select the top $k$ closest neighbour in the training set
+2. Select the top *k* closest neighbour in the training set
 3. Find the most common label among those neighbours
 
-I'll use the validation test to select $k$. 
+I'll use the validation test to select *k*. 
 
 Since I have a fairly large data set, computing the distance between a point in the validation
 set and all points in the training set will require more RAM than Google Colab provides.
