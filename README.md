@@ -1,5 +1,5 @@
 # Music Millenium Classification
-![](https://github.com/saihiel/Music_Year_Classification/blob/master/million_song_dataset.jpg)
+![](https://github.com/saihiel/Music_Year_Classification/blob/master/million_song_dataset.jpg)  
 I will build Logistic Regression and K - Nearest Neighbour models to predict which century a piece of music was released. I am using the "YearPredictionMSD Data Set" based on the Million Song Dataset. The data is available to download from the UCI Machine Learning Repository:
 
 https://archive.ics.uci.edu/ml/datasets/yearpredictionmsd
