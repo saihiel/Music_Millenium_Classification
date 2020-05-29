@@ -27,7 +27,8 @@ To make the comptuations tractable, I will:
 3. I will use the **cosine similarity** rather than Euclidean distance. I will also pre-scale
    each element in training set and the validation set to be a unit vector, so that computing
    the cosine similarity is equivalent to computing the dot product. ie: 
-   $$cos(\theta) = \frac{v \cdot w}{||v|| ||w||}$$ But if both ||v|| and ||w|| are zero, then
+   ![equation](https://latex.codecogs.com/gif.latex?cos%28%5Ctheta%29%20%3D%20%5Cfrac%7Bv%20%5Ccdot%20w%7D%7B%7C%7Cv%7C%7C%20%7C%7Cw%7C%7C%7D)  
+   But if both ||v|| and ||w|| are zero, then
    only the dot product remains.
 
 ## Results
