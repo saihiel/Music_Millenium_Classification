@@ -6,6 +6,30 @@ https://archive.ics.uci.edu/ml/datasets/yearpredictionmsd
 
 *As this is not as challenging a dataset/project I will make it more interesting by implementing my Logistic Regression models using only numpy and train it using stochastic gradient descent from scratch. I will similarly implement my K-NN model from scratch!*
 
+## K - Nearest Neighbour Implementation
+
+I will compare the nearest neighbour model with the logistic regression model.
+
+To make predictions for a new data point using k-nearest neighbour, I will need to:
+
+1. Compute the distance from this new data point to every element in the training set
+2. Select the top $k$ closest neighbour in the training set
+3. Find the most common label among those neighbours
+
+I'll use the validation test to select $k$. 
+
+Since I have a fairly large data set, computing the distance between a point in the validation
+set and all points in the training set will require more RAM than Google Colab provides.
+To make the comptuations tractable, I will:
+
+1. Use only a subset of the training set (only the first 100,000 elements)
+2. Use only a subset of the validation set (only the first 1000 elements)
+3. I will use the **cosine similarity** rather than Euclidean distance. I will also pre-scale
+   each element in training set and the validation set to be a unit vector, so that computing
+   the cosine similarity is equivalent to computing the dot product. ie: 
+   $$cos(\theta) = \frac{v \cdot w}{||v|| ||w||}$$ But if both ||v|| and ||w|| are zero, then
+   only the dot product remains.
+
 ## Results
 The accuracies achieved by my Logistic Regression model:  
   Training:  72.17%  
